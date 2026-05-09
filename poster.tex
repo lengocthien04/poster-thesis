@@ -1,0 +1,92 @@
+\documentclass[portrait,a1paper,fontscale=0.42]{baposter}
+
+% \documentclass[landscape,a0paper,fontscale=0.292]{baposter}
+
+\usepackage[vlined]{algorithm2e}
+\usepackage{times}
+\usepackage{calc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{relsize}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[T1]{fontenc}
+\usepackage{ae}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{svg}
+\graphicspath{{images/}{Dropouts/}}
+\usepackage{float}
+\setlist[itemize]{leftmargin=*,nosep}
+ \setlength{\columnsep}{0.7em}
+ \setlength{\columnseprule}{0mm}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Save space in lists. Use this after the opening of the list
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \newcommand{\compresslist}{%
+ \setlength{\itemsep}{0pt}%
+ \setlength{\parskip}{0pt}%
+ \setlength{\parsep}{0pt}%
+ }
+\renewcommand{\rmdefault}{ptm} % Arial
+\renewcommand{\sfdefault}{ptm} % Arial
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Begin of Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Here starts the poster
+%%---------------------------------------------------------------------------
+%% Format it to your taste with the options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{poster}{
+		% Show grid to help with alignment
+		grid=false,
+		columns=2,
+		% Column spacing
+		colspacing=0.8em,
+		%  rowspacing=0.8em,
+		% Color style
+		headerColorOne=blue!20!white!90!black,
+		borderColor=blue!30!white!90!black,
+		% Format of textbox
+		textborder=faded,
+		% Format of text header
+		headerborder=closed,
+		headershape=rounded,
+		headershade=plain,
+		background=none,
+		bgColorOne=blue!10!white,
+		headerheight=0.12\textheight}
+	% Eye Catcher
+	{
+		% \includegraphics[width=0.08\linewidth]{HCMUT_logo}
+	}
+	% Title
+	{\sc\huge\bf \vspace{-0.1em} SHDFL: Secure Hierarchical Decentralized Federated Learning}
+	% Authors
+	{\vspace{0.3em}  Thien Nguyen \\[0.2em]
+		{Ho Chi Minh City University of Technology \\[0.2em]}}
+	% University logo
+	{
+		% \includegraphics[width=0.08\linewidth]{HCMUT_logo}
+	}
+	\input{problem_def_and_contribution}
+	\input{preliminaries}
+	\input{method}
+	\input{qualitative_results}
+	\input{quantitative_results}
+
+
+\end{poster}
+\end{document}

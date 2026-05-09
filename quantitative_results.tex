@@ -1,0 +1,21 @@
+\headerbox{Quantitative Results}{name=quantitative,column=0,span=2,below=qualitative}{
+	\begin{minipage}[t]{0.60\textwidth}
+		\textbf{Convergence Speed:}
+		SHDFL achieves competitive accuracy compared to baselines (D-Clique, Random, Fully Connected) on CIFAR-10 across varying cluster sizes ($c=3,6$) and heterogeneity levels ($\alpha=0.2,0.4,0.6$).
+
+		\vspace{0.5em}
+		\centering
+		\includegraphics[width=\linewidth]{convergence_combined.png}
+		\captionof{figure}{Convergence speed on CIFAR-10 (rows: $c=3,6$; cols: $\alpha=0.2,0.4,0.6$)}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.36\textwidth}
+		\textbf{Robustness under Dropouts:}
+		Maintains performance with up to 50\% node failures, thanks to quorum-based SAP.
+
+		\vspace{0.5em}
+		\centering
+		\includegraphics[width=\linewidth]{dropout_comparison_with_retries.jpg}
+		\captionof{figure}{Robustness under node dropouts}
+	\end{minipage}
+}

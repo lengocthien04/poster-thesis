@@ -1,0 +1,20 @@
+\headerbox{Problem Definition and Contributions}{name=problem,column=0,row=0}{
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{Problem:}
+Federated Learning (FL) enables collaborative model training without sharing raw data, but faces challenges:
+\begin{itemize}
+\item \textbf{Privacy Risks:} Centralized FL relies on trusted aggregators, vulnerable to inference attacks.
+\item \textbf{Scalability Issues:} Fully decentralized FL suffers from communication overhead and slow convergence.
+\item \textbf{Trust and Auditability:} Lack of verifiable aggregation and model provenance.
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{Contributions:}
+\begin{itemize}
+\item \textbf{SHDFL Framework:} Secure Hierarchical Decentralized FL with cluster-based SAP, bridge-mediated ECM gossip, and multi-scope aggregation.
+\item \textbf{System Implementation:} Hyperledger Fabric for authorization, IPFS for storage, secure aggregation protocol.
+\item \textbf{Evaluation:} CIFAR-10 experiments showing improved convergence, reduced communication, and robustness under dropouts.
+\end{itemize}
+\end{minipage}
+}

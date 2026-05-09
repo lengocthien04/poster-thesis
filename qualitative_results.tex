@@ -1,0 +1,27 @@
+\headerbox{Qualitative Results: System Architecture}{name=qualitative,column=1,below=preliminaries}{
+\centering
+\textbf{SHDFL Hierarchical Topology}
+
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{Cluster Level:}
+\begin{itemize}
+\item Trainers perform local training.
+\item Aggregator runs SAP.
+\item Bridge nodes for external communication.
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{Higher Scopes:}
+\begin{itemize}
+\item State aggregators merge cluster models.
+\item Nation scope for global coordination.
+\item Asynchronous dissemination.
+\end{itemize}
+\end{minipage}
+
+\vspace{1em}
+\centering
+\includegraphics[width=0.8\linewidth]{system-architecture.png}
+\captionof{figure}{SHDFL System Architecture Diagram}
+}

@@ -1,0 +1,30 @@
+\headerbox{Method: SHDFL Architecture and Workflow}{name=method,column=0,below=problem}{
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{System Architecture:}
+\begin{itemize}
+\item \textbf{Hierarchical Topology:} Clusters, states, nations with bridge nodes for inter-cluster communication.
+\item \textbf{Secure Aggregation Procedure (SAP):} Quorum-protected averaging within clusters.
+\item \textbf{External Cluster Models (ECMs):} Verified models exchanged between clusters.
+\item \textbf{Storage and Auditability:} IPFS for models, blockchain for CIDs and metadata.
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{Workflow:}
+\begin{enumerate}
+\item \textbf{Local Training:} Trainers pull latest model, perform SGD on local data.
+\item \textbf{Cluster Aggregation:} Secure aggregation within cluster using SAP.
+\item \textbf{Inter-Cluster Gossip:} Bridge nodes exchange ECMs via IPFS.
+\item \textbf{Hierarchical Merge:} Fan-out nodes propagate to higher scopes.
+\end{enumerate}
+\end{minipage}
+
+\vspace{0.5em}
+\centering
+\textbf{Key Components:}
+\begin{itemize}
+\item Bridge Node: Disseminates model references laterally.
+\item Fan-out Node: Forwards aggregates to higher-level aggregators.
+\item Aggregator: Computes intra/cross-cluster merges.
+\end{itemize}
+}
